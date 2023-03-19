@@ -39,9 +39,10 @@ Validator is based on [https://www.macoratti.net/alg_cpf.htm#:~:text=O](https://
   * Pagination: [backend/settings.py](backend/settings.py#L128)
 * Create endpoint (POST): [http://127.0.0.1:8000/api/v1/customers/](http://127.0.0.1:8000/api/v1/customers/)
   * Status Code: [422](apps/customer/api/v1/views.py#L23)
-* Search endpoint (GET): [http://127.0.0.1:8000/api/v1/customers/?search=111.444.777.35](http://127.0.0.1:8000/api/v1/customers/?search=111.444.777.35)
+* Search endpoint (GET): [http://127.0.0.1:8000/api/v1/customers/?cpf=111.444.777.35](http://127.0.0.1:8000/api/v1/customers/?cpf=111.444.777.35)
 
 ## ToDo
 
 * Deal with LGPD (GDPR) since it is something that deals with sensitive data
 * Change database
+* Deal with sql injection
